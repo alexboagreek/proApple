@@ -1,2 +1,2 @@
 # Pro Apple 
-## Intensive course
+## Intensive course MethED
