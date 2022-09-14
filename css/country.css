@@ -1,0 +1,19 @@
+.country__btn {
+    position: relative;
+    padding-right: 13px;
+}
+.country__btn:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 9px;
+    height: 6px;
+    background: url('../assets/icons/drop.svg') no-repeat center;
+}
+
+.country__list {
+    display: none;
+}

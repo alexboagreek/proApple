@@ -1,0 +1,40 @@
+.goods {
+    padding: 40px 0;
+}
+
+.goods__tagline {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 4px;
+}
+.goods__title {
+    font-weight: 600;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 29px;
+}
+.goods__helper {
+    position: relative;
+}
+
+.goods__arrow {
+    position: absolute;
+    top: 115px;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url('../assets/icons/left-arrow.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.goods__arrow_prev {
+    left: -5px;
+}
+
+.goods__arrow_next {
+    right: -5px;
+    transform:  rotate(180deg);
+}
