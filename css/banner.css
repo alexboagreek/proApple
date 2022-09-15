@@ -51,6 +51,7 @@
     .banner {
         padding: 120px 0 160px;
         background-image: url('../assets/img/laptop-bg.jpg');
+        margin-bottom: 70px;
     }
 
     .banner__content {
