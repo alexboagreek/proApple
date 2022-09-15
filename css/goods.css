@@ -28,6 +28,8 @@
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 50%;
+    cursor: pointer;
+    z-index: 50;
 }
 
 .goods__arrow_prev {
