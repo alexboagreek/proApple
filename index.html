@@ -8,11 +8,12 @@
     <link rel="apple-touch-icon" href="assets/icons/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="assets/libs/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="assets/libs/simplebar.css">
+    <script src="assets/libs/simplebar.min.js" defer></script>
     <script src="js/index.js" type="module"></script>
     <title>Pro Apple | Магазин Яблокоманов</title>
 </head>
-<body>
+<body> data-price=""
     <header class="header">
         <div class="container header__container">
             <img class="header__logo" src="assets/img/logo.svg" alt="Логотип Pro Apple">
@@ -28,20 +29,31 @@
             </nav>
             <div class="header__country country">
                 <button class="country__btn">Страна</button>
-                <ul class="country__list">
-                    <li class="coutry__item">
-                        <button class="coutry__btn">Russia, RUB</button>
-                    </li>
-                    <li class="coutry__item">
-                        <button class="coutry__btn">USA, USD</button>
-                    </li>
-                    <li class="coutry__item">
-                        <button class="coutry__btn">Germany, EURO</button>
-                    </li>
-                    <li class="coutry__item">
-                        <button class="coutry__btn">Great Britain, GBP</button>
-                    </li>
-                </ul>
+                <div class="country__wrapper">
+                    <ul class="country__list">
+                        <li class="country__item">
+                            <button class="country__choice" data-currency="RUB">Russia, RUB</button>
+                        </li>
+                        <li class="country__item">
+                            <button class="country__choice" data-currency="USD">USA, USD</button>
+                        </li>
+                        <li class="country__item">
+                            <button class="country__choice" data-currency="EURO">Germany, EURO</button>
+                        </li>
+                        <li class="country__item">
+                            <button class="country__choice" data-currency="GBP">Great Britain, GBP</button>
+                        </li>
+                        <li class="country__item">
+                            <button class="country__choice" data-currency="UAH">Ukraine, UAH</button>
+                        </li>
+                        <li class="country__item">
+                            <button class="country__choice" data-currency="AUD">Australia, AUD</button>
+                        </li>
+                        <li class="country__item">
+                            <button class="country__choice" data-currency="KZT">Kazakhstan, KZT</button>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -84,7 +96,7 @@
     
                                     <div class="product__info">
                                         <h3 class="product__title">iPhone 14 PRO</h3>
-                                        <p class="product__price">$1050</p>
+                                        <p class="product__price" data-price="1050">$1050</p>
                                     </div>
     
                                     <button class="product__more">Узнать больше</button>
@@ -98,7 +110,7 @@
     
                                     <div class="product__info">
                                         <h3 class="product__title">iPhone 14</h3>
-                                        <p class="product__price">$799</p>
+                                        <p class="product__price" data-price="799">$799</p>
                                     </div>
     
                                     <button class="product__more">Узнать больше</button>
@@ -112,7 +124,7 @@
     
                                     <div class="product__info">
                                         <h3 class="product__title">AirPods Pro</h3>
-                                        <p class="product__price">$249</p>
+                                        <p class="product__price" data-price="249">$249</p>
                                     </div>
     
                                     <button class="product__more">Узнать больше</button>
@@ -126,7 +138,7 @@
     
                                     <div class="product__info">
                                         <h3 class="product__title">Apple Watch Ultra</h3>
-                                        <p class="product__price">$799</p>
+                                        <p class="product__price" data-price="799">$799</p>
                                     </div>
     
                                     <button class="product__more">Узнать больше</button>
@@ -140,7 +152,7 @@
     
                                     <div class="product__info">
                                         <h3 class="product__title">Apple Watch Series 8</h3>
-                                        <p class="product__price">$399</p>
+                                        <p class="product__price" data-price="399">$399</p>
                                     </div>
     
                                     <button class="product__more">Узнать больше</button>
@@ -203,5 +215,24 @@
             </p>
         </div>
     </footer>
+    <div class="modal">
+        <div class="modal__wrapper">
+            <h2 class="modal__title">Узнай все о новом iPhone 14</h2>
+
+            <form class="modal__form form">
+                <label class="form__label">
+                    <span  class="form__placeholder">Ваше имя</span>
+                    <input class="form__input" type="text">
+                </label>
+
+                <label class="form__label">
+                    <span  class="form__placeholder">Телефон</span>
+                    <input class="form__input" type="text">
+                </label>
+
+                <button class="form__submit" type="submit">Заказать консультацию</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
