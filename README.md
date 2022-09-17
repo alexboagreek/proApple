@@ -1,5 +1,5 @@
 # Pro Apple 
-## Intensive course MethED (13.09 - 16.09)
+## Intensive course MethED (13.09.22 - 16.09.22)
 ## Лендинг с товарами Apple
 * — Основы HTML;
 * — Основы CSS;
