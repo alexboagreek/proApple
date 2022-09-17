@@ -48,6 +48,7 @@ const formInput = document.querySelectorAll('.form__input');
 productMore.forEach((button) => {
     button.addEventListener('click', () => {
       modal.classList.add('modal_open');
+      window.addEventListener('keyup', closeModal);
     });
 });
 
@@ -177,3 +178,18 @@ const timer = deadline => {
 };
 
 timer('2023/09/07 20:00');
+
+
+//** script закрытия модального окна */
+
+const closeModal = (event) => {
+  if (
+    (event.type === 'keyup' && event.key === 'Escape') ||
+    (event.type === 'click' && event.target === modal)
+  ) {
+    modal.classList.remove('modal_open');
+    window.removeEventListener('keyup', closeModal)
+  }
+};
+
+modal.addEventListener('click', closeModal);

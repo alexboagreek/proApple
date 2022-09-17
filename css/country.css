@@ -59,7 +59,7 @@
 }
 .country__scrollbar {
     border-radius: 2px;
-    background-color: #ECECEC;
+    background-color: #FFFFFF;
 }
 
 @media (min-width: 1024px) {
@@ -69,4 +69,8 @@
     .country__choice {
         font-size: 16px;
     }
+}
+
+.box {
+    background-color: hsl(0, 100%, 50%);
 }
